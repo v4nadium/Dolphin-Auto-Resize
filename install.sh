@@ -13,6 +13,14 @@ mv ./autoresize.desktop /home/$USER/.local/share/kservices5/ServiceMenus
 
 mv ./dolphin_resize.py /home/$USER/bin/
 
+echo"#! /bin/bash
+
+while [ true ] ;
+    do
+    python /home/$USER/bin/dolphin_resize.py
+    sleep 1
+    done" > ./dolphin_auto_resize.sh
+
 mv ./dolphin_auto_resize.sh /home/$USER/bin/
 
 echo "Please manually go to the Dolphin Preferences and check the \"Show full path inside location bar\" box in the Startup tab."
