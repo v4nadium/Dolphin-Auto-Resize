@@ -1,0 +1,1 @@
+# Dolphin-Auto-Resize
